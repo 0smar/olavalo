@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Olavalo: Amor del Mar</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Satisfy" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="intro">
+		<div class="nav-bar">
+			<div class="logo">
+				<img src="img/olavalo-white.svg" alt="Olavalo: Amor de Mar">
+			</div>
+			<div class="menu">
+				<a href="">Inicio</a>
+				<a href="">¿Cómo funciona?</a>
+				<a href="">Productos</a>
+				<a href="">Contacto</a>
+			</div>
+		</div>
+		<div class="phrase">
+			<div class="line"></div>
+			<p>La frescura del mar directo a tu hogar</p>
+			<div class="line"></div>
+		</div>
+		<img src="img/divider.svg" alt="" class="section-divider">
+	</div>
+	
+	<div class="info">
+		<img src="salmon-plate.png" alt="Platillo de Salmón">
+		<div class="description">
+			<h2>¿Qué es Olavalo?</h2>
+			<p>
+				Olavalo es la manera más sencilla de comprar pescados y mariscos frescos a domicilio. Nuestros productos no sólo llegan rápido sino que la calidad de los mismos es nuestra prioridad. 
+				<br>
+				Atrévete a probar el amor del mar hasta la puerta de tu casa. ¡No te arrepentirás!
+			</p>
+		</div>
+	</div>
+
+	<div class="products">
+		<div class="recipes-container">
+			<div class="recipe">
+				<div class="overlay">
+					<a href="">Arroz con Camarones</a>
+				</div>
+			</div>
+			<div class="recipe">
+				<div class="overlay">
+					<a href="">Arroz con Camarones</a>
+				</div>
+			</div>
+			<div class="recipe">
+				<div class="overlay">
+					<a href="">Arroz con Camarones</a>
+				</div>
+			</div>
+			<div class="recipe">
+				<div class="overlay">
+					<a href="">Arroz con Camarones</a>
+				</div>
+			</div>
+			<div class="recipe">
+				<div class="overlay">
+					<a href="">Arroz con Camarones</a>
+				</div>
+			</div>
+		</div>
+		<div class="products-description">
+			<div class="action">
+				Poasa tu cursor sobre las imágenes de arriba
+			</div>
+			<div class="description">
+				<h2>Recetas Increíbles con calidad Olavalo</h2>	
+				<p>
+					¿Aún no decides qué preparar? En Olavalo te compartimos recetas deliciosas y sencillas de preparar con nuestros productos. Así cuando tu pedido llegue estarás listo para cocinar. 
+					<br>
+					¿Qué se te antoja hoy?
+				</p>
+			</div>
+			<div class="button">
+				Ver todos
+			</div>
+		</div>
+		<img src="img/colored-divider.svg" alt="" class="colored-divider">
+	</div>
+
+	<div class="steps">
+		<h2>Fresco y Fácil</h2>
+		<p>Así es Olavalo</p>
+		<div class="steps-container">
+			<div class="step">
+				<div class="header">Selecciona</div>
+				<p>
+					Elige el producto que más se te antoje de nuestro catálogo de productos. ¡Checa nuestras recetas!
+				</p>
+				<img src="img/check.svg" alt="Selecciona" class="step-icon">
+			</div>
+			<div class="step">
+				<div class="header">Ordena</div>
+				<p>
+					Contáctanos y haz tu pedido, fácil y sin complicaciones, sólo dinos lo que necesitas.
+				</p>
+				<img src="img/phone.svg" alt="Ordena" class="step-icon">
+			</div>
+			<div class="step">
+				<div class="header">¡A Cocinar!</div>
+				<p>
+					Llevaremos tu pedido hasta la puerta de tu casa, rápido, fresco y con todo el amor del mar.
+				</p>
+				<img src="img/cook.svg" alt="¡A Cocinar" class="step-icon">
+			</div>
+		</div>
+	</div>
+
+	<div class="contact">
+		<div class="contact-image">
+			<div class="color-square"></div>
+			<img src="" alt="">
+		</div>
+		<div class="contact-form">
+			<h3>¿Listo? Contáctanos</h3>
+			<form method="POST" action="https://formspree.io/maur@gmail.com" >
+				<input type="text" name="Nombre" placeholder="Nombre" required>
+				<input type="email" name="Correo Electrónico" placeholder="E-mail" required>
+				<textarea placeholder="Mensaje" name="Mensaje" rows="4" required></textarea> 
+				<input type="submit"  value="Enviar">
+				<input type="hidden" name="_next" value="<%= root_path %>" />
+				<input type="hidden" name="_subject" value="Nuevo Mensaje desde Olavalo" />
+			</form>
+		</div>
+	</div>
+	
+	<div class="social-media">
+		<a href="">
+			<img src="img/whatsapp.svg" alt="Contáctanos vía Whatsapp">
+		</a>
+		<a href="">
+			<img src="img/facebook.svg" alt="Contáctanos vía Facebook">
+		</a>
+	</div>
+	
+	<div class="footer">
+		<div class="privacy">
+			<div>Olavalo 2017</div>
+			<div>Aviso de Privacidad</div>
+		</div>
+		<div class="nuva">
+			<a href="http://nuva.rocks">
+				<img src="img/nuva.svg" alt="Desarrollado por Nuva Rocks">
+			</a>
+		</div>
+	</div>
+
+</body>
+<script src="script.js"></script>
+</html>
