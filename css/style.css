@@ -29,7 +29,7 @@ h1, h2, h3{
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	background-image: url('../img/salmon.jpg');
+	background-image: url('../img/1B.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -69,11 +69,12 @@ h1, h2, h3{
 	letter-spacing: 3px;
 	margin: 0 16px;
 	font-size: 20px;
+	font-weight: bold;
 	transition: all 0.2s ease;
 }
 
 .menu a:hover{
-	color: #B2B2B2;
+	color: #0D47A1;
 }
 
 .mobile-menu{
@@ -202,8 +203,27 @@ h1, h2, h3{
 
 .recipe{
 	width: 20%;
-	background-image: url('../img/recipe.png');
 	background-size: cover;
+}
+
+#index-recipe-1{
+	background-image: url('../img/1D.jpeg');
+}
+
+#index-recipe-2{
+	background-image: url('../img/1E.jpeg');
+}
+
+#index-recipe-3{
+	background-image: url('../img/1F.jpeg');
+}
+
+#index-recipe-4{
+	background-image: url('../img/1G.jpeg');
+}
+
+#index-recipe-5{
+	background-image: url('../img/1H.jpeg');
 }
 
 .recipe .overlay{
@@ -359,10 +379,15 @@ h1, h2, h3{
 	right: -40px;
 }
 
-.contact-image img{
+.contact-image .color-square-img{
 	width: 100%;
 	z-index: 10;
+}
+
+.color-square-img img{
 	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 .contact-form{
@@ -377,6 +402,22 @@ h1, h2, h3{
 	width: 50%;
 	text-align: left;
 	font-size: 30px;
+}
+
+.contact-phone{
+	width: 100%;
+	text-align: left;
+	display: flex;
+	align-items:center;
+}
+
+.contact-phone:first-of-type{
+	margin-bottom: 0;
+}
+
+.contact-phone img{
+	width: 30px;
+	margin-right: 10px;
 }
 
 .contact-form form{
@@ -534,6 +575,16 @@ input[type="submit"]:hover{
 	width: 100%;
 }
 
+.business-header{
+	display: flex;
+}
+
+.business-header img{
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .bottom-divider{
 	height: 10px;
 	width: 100%;
@@ -554,12 +605,12 @@ input[type="submit"]:hover{
 }
 
 .section-description img{
-	width: 35%;
+	width: 50%;
 	height: auto;
 }
 
 .section-description p{
-	width: 55%;
+	width: 45%;
 }
 
 .steps-detail-container{

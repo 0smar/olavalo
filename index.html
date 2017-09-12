@@ -22,6 +22,7 @@
 	    <a href="">Inicio</a>
 		<a href="como-funciona.html">¿Cómo funciona?</a>
 		<a href="productos.html">Productos</a>
+		<a href="empresas.html">Empresas</a>
 		<a href="contacto.html">Contacto</a>
 	  </div>
 
@@ -35,6 +36,7 @@
 				<a href="">Inicio</a>
 				<a href="como-funciona.html">¿Cómo funciona?</a>
 				<a href="productos.html">Productos</a>
+				<a href="empresas.html">Empresas</a>
 				<a href="contacto.html">Contacto</a>
 			</div>
 			<div class="mobile-menu" onclick="openNav()">
@@ -56,38 +58,37 @@
 		<div class="description">
 			<div class="header">¿Qué es Olavalo?</div>
 			<p class="">
-				Olavalo es la manera más sencilla de comprar pescados y mariscos frescos a domicilio. Nuestros productos no sólo llegan rápido sino que la calidad de los mismos es nuestra prioridad. 
-				<br><br>
-				Atrévete a probar el amor del mar hasta la puerta de tu casa. ¡No te arrepentirás!
+				Olavalo es una empresa mexicana dedicada a llevar los mejores pescados y mariscos hasta la puerta de tu casa o negocio. Somos la manera más sencilla de comprar productos frescos y de la más alta calidad. Contáctanos y has tu pedido, ¡Te garantizamos que no te arrepentirás!
+				<br>
 			</p>
 		</div>
 	</div>
 
 	<div class="products">
 		<div class="recipes-container">
-			<div class="recipe recipe-from-bottom">
+			<div class="recipe recipe-from-bottom" id="index-recipe-1">
 				<div class="overlay">
-					<a href="">Arroz con Camarones</a>
+					<a href="">Trucha salmonada a las brazas</a>
 				</div>
 			</div>
-			<div class="recipe recipe-from-bottom">
+			<div class="recipe recipe-from-bottom" id="index-recipe-2">
 				<div class="overlay">
-					<a href="">Arroz con Camarones</a>
+					<a href="">Brocheta de Camarón</a>
 				</div>
 			</div>
-			<div class="recipe recipe-from-bottom">
+			<div class="recipe recipe-from-bottom" id="index-recipe-3">
 				<div class="overlay">
-					<a href="">Arroz con Camarones</a>
+					<a href="">Tilapia a la plancha con papas</a>
 				</div>
 			</div>
-			<div class="recipe recipe-from-bottom">
+			<div class="recipe recipe-from-bottom" id="index-recipe-4">
 				<div class="overlay">
-					<a href="">Arroz con Camarones</a>
+					<a href="">Bowl de Salmón y Aguacate</a>
 				</div>
 			</div>
-			<div class="recipe recipe-from-bottom">
+			<div class="recipe recipe-from-bottom" id="index-recipe-5">
 				<div class="overlay">
-					<a href="">Arroz con Camarones</a>
+					<a href="">Robalo a la Pimienta</a>
 				</div>
 			</div>
 		</div>
@@ -98,9 +99,9 @@
 			<div class="description">
 				<div class="header desc-from-bottom">Recetas Increíbles con calidad Olavalo</div>	
 				<p class="desc-from-bottom">
-					¿Aún no decides qué preparar? En Olavalo te compartimos recetas deliciosas y sencillas de preparar con nuestros productos. Así cuando tu pedido llegue estarás listo para cocinar. 
+					¿Todavía no sabes que preparar? En Olavalo te compartimos recetas deliciosas y sencillas de preparar con nuestros productos. Así, cuando llegue tu pedido estarás listo para cocinar.
 					<br><br>
-					¿Qué se te antoja hoy?
+					¿Qué se te antoja?
 				</p>
 			</div>
 			<div class="button">
@@ -117,14 +118,14 @@
 			<div class="step step-from-bottom">
 				<div class="header">Selecciona</div>
 				<p>
-					Elige el producto que más se te antoje de nuestro catálogo de productos. ¡Checa nuestras recetas!
+					Elige lo que más se te antoje de nuestro catálogo de productos. ¡Checa nuestras recetas!
 				</p>
 				<img src="img/check.svg" alt="Selecciona" class="step-icon">
 			</div>
 			<div class="step step-from-bottom">
 				<div class="header">Ordena</div>
 				<p>
-					Contáctanos y haz tu pedido, fácil y sin complicaciones, sólo dinos lo que necesitas.
+					Estamos para servirte, contáctanos por teléfono, Whatsapp o en línea y haz tu pedido. Fácil y sin complicaciones, sólo dinos qué necesitas.
 				</p>
 				<img src="img/phone.svg" alt="Ordena" class="step-icon">
 			</div>
@@ -141,13 +142,16 @@
 	<div class="contact">
 		<div class="contact-image">
 			<div class="color-square square-from-left"></div>
-			<img src="img/recipe.png" alt="Receta Olavalo" class="square-from-left">
+			<img src="img/1I.jpeg" alt="Receta Olavalo" class="square-from-left" id="color-square-img">
 		</div>
 		<div class="contact-form">
 			<h3>¿Listo? Contáctanos</h3>
 			<form method="POST" action="https://formspree.io/maur@gmail.com" >
+				<p class="contact-phone"><img src="img/whatsapp.svg" alt="">555-5555-5555</p>
+				<p class="contact-phone"><img src="img/phone.svg" alt="">555-5555-5555</p>
 				<input type="text" name="Nombre" placeholder="Nombre" required>
 				<input type="email" name="Correo Electrónico" placeholder="E-mail" required>
+				<input type="text" name="Teléfono" placeholder="Teléfono" required>
 				<textarea placeholder="Mensaje" name="Mensaje" rows="4" required></textarea> 
 				<input type="submit"  value="Enviar">
 				<input type="hidden" name="_next" value="<%= root_path %>" />

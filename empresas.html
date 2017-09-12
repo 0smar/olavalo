@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Empresas - Olavalo</title>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300|Satisfy" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div id="myNav" class="overlay-menu">
+
+	  <!-- Button to close the overlay navigation -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	  <!-- Overlay content -->
+	  <div class="overlay-content">
+		<a href="index.html">Inicio</a>
+		<a href="como-funciona.html">¿Cómo funciona?</a>
+		<a href="productos.html">Productos</a>
+		<a href="empresas.html">Empresas</a>
+		<a href="contacto.html">Contacto</a>
+	  </div>
+
+	</div>
+	<div class="nav-bar-container">
+		<div class="nav-bar">
+			<div class="logo">
+				<img src="img/olavalo-white.svg" alt="Olavalo: Amor de Mar">
+			</div>
+			<div class="menu">
+				<a href="index.html">Inicio</a>
+				<a href="como-funciona.html">¿Cómo funciona?</a>
+				<a href="productos.html">Productos</a>
+				<a href="empresas.html">Empresas</a>
+				<a href="contacto.html">Contacto</a>
+			</div>
+			<div class="mobile-menu" onclick="openNav()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="base-container">
+		<br><br>
+		<div class="section-header">
+			<div class="section-header-title">
+				<div class="section-title">Empresas</div>
+			</div>
+			<div class="section-header-image business-header">
+				<img src="img/4A.jpeg" alt="Empresas Olavalo">
+				<img src="img/4B.jpeg" alt="Empresas Olavalo">
+			</div>
+		</div>
+		<br>
+		<div class="bottom-divider"></div>
+		<div class="description from-bottom" >
+			<p style="width: 100%;">
+				En Olavalo conocemos la importancia de cuidar tu negocio y comprendemos que quieres ofrecer sólo los mejores productos. Es por eso que también ofrecemos servicio a restaurantes, bares, hoteles y banquetes. <br><br>Déjanos un mensaje, nos pondremos en contacto a la brevedad para hacerte una propuesta.
+			</p>
+		</div>
+		<br><br><br>
+		<div class="contact">
+			<div class="contact-image">
+				<div class="color-square square-from-left"></div>
+				<div class="color-square-img"><img src="img/4C.jpeg" alt="Receta Olavalo" class="square-from-left"></div>
+			</div>
+			<div class="contact-form contact-form-section" style="">
+				<h3>Contáctanos</h3>
+				<form method="POST" action="https://formspree.io/maur@gmail.com" >
+					<p class="contact-phone"><img src="img/whatsapp.svg" alt="">555-5555-5555</p>
+					<p class="contact-phone"><img src="img/phone.svg" alt="">555-5555-5555</p>
+					<input type="text" name="Nombre" placeholder="Nombre" required>
+					<input type="email" name="Correo Electrónico" placeholder="E-mail" required>
+					<textarea placeholder="Mensaje" name="Mensaje" rows="4" required></textarea> 
+					<input type="submit"  value="Enviar">
+					<input type="hidden" name="_next" value="<%= root_path %>" />
+					<input type="hidden" name="_subject" value="Nuevo Mensaje desde Olavalo" />
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="social-media from-bottom">
+		<a href="">
+			<img src="img/whatsapp.svg" alt="Contáctanos vía Whatsapp">
+		</a>
+		<a href="">
+			<img src="img/facebook.svg" alt="Contáctanos vía Facebook">
+		</a>
+	</div>
+	
+	<div class="footer">
+		<div class="ocean">
+		  	<div class="wave"></div>
+		  	<div class="wave"></div>
+		<div class="privacy">
+			<div>Olavalo 2017</div>
+			<div>Aviso de Privacidad</div>
+		</div>
+		<div class="nuva">
+			<a href="http://nuva.rocks">
+				<img src="img/nuva.svg" alt="Desarrollado por Nuva Rocks">
+			</a>
+		</div>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

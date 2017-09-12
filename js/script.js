@@ -2,6 +2,7 @@ $( document ).ready(function() {
     $('.overlay').height($('.overlay').width());
     $('.recipe-image').height($('.recipe-image').width());
     $('.color-square').height($('.color-square').width());
+    $('.color-square-img').height($('.color-square-img').width());
 
 });
 
